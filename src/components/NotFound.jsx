@@ -1,6 +1,9 @@
 import React from 'react';
 import './Styles/NotFound.css'
-import DiyarahLogo from '/Images/Icons/logoWithSlogan.png'
+
+import { ImNotification } from "react-icons/im";
+
+import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
 import NotFoundIcon from '/Images/Icons/error-404.png'
 
 const NotFound = () => {
@@ -8,7 +11,7 @@ const NotFound = () => {
     <div id='NotFoundContainer'>
         <div id='NotFoundCompanyLogo'>
             <a href="/">
-                <img src={DiyarahLogo} alt="Company Logo" />
+                <img src={DiyarahLogo} alt="Company Logo" width={400} />
             </a>
         </div>
         <div id='NotFoundContent'>
@@ -16,7 +19,7 @@ const NotFound = () => {
             <p>نأسف لعدم توفر اي خدمة على هذا الرابط, يمكنك الوصول الى الصفحة الرئيسية عبر هذا <a href="/">الرابط</a>.</p>
         </div>
         <div id="NotFoundIcon">
-            <img src={NotFoundIcon} alt="Not Found Icon" />
+            <ImNotification />
         </div>
     </div>
   );
