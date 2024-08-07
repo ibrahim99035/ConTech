@@ -1,0 +1,90 @@
+/* Default styles for larger screens */
+#sections, #SectionsBody, .infoPart, .infoContent, .infoText, .infoImage {
+    position: relative;
+}
+
+.infoPart {
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1000;
+}
+  
+.infoPart h1{
+    text-align: center;
+}
+
+#SectionsBody {
+    position: relative;
+    z-index: 1000;
+}
+  
+.infoContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1000;
+}
+  
+.infoText {
+    flex: 1;
+    padding: 0 20px;
+}
+  
+.infoImage img {
+    max-width: 30rem;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInBottom 1s forwards;
+    margin-top: 2rem;
+}
+  
+.infoContent.inforeverse {
+    flex-direction: row-reverse;
+}
+  
+.infoText h3 {
+    font-size: 1.5rem;
+    color: var(--sec-color);
+}
+  
+.infoText p {
+    font-size: 1.3rem;
+    color: var(--sec-color);
+}
+  
+#electricItems {
+    margin-right: 30px;
+}
+  
+@keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Mobile screen styles */
+@media (max-width: 767px) {
+    .infoContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .infoImage img {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .infoContent.inforeverse {
+      flex-direction: column-reverse;
+    }
+} 
