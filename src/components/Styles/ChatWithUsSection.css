@@ -1,47 +1,97 @@
-.chat-section {
-    background-color: var(--blacker-color); /* Background color */
-    padding: 80px;
+.contact-us {
+    background: linear-gradient(135deg, var(--blacker-color) 0%, var(--main-color) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
     text-align: center;
-    height: 70%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    color: var(--sec-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-us h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 30px;
 }
-
-.whatsapp-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--sec-color); /* WhatsApp green color */
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+.social-icons {
+    margin-bottom: 30px;
 }
-
-.whatsapp-button:hover {
-    background-color: #a07b4d; /* Darker shade on hover */
-    color: white;
+  
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
+  
+.social-icons a:hover {
+    color: var(--main-color);
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+  
+.contact-form input {
+    height: 50px;
+}
+  
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+  
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blacker-color);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+  
+.contact-form button:hover {
+    background-color: var(--main-color);
+}
+  
 
 @media screen and (max-width: 768px) {
-    .chat-section {
+    .contact-us {
         padding: 50px;
         height: 50%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .chat-section {
+    .contact-us {
         padding: 30px;
         height: 40%;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .chat-section {
+    .contact-us {
         padding: 20px;
         height: 30%;
     }

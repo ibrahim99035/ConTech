@@ -4,10 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import './Styles/CardComponent.css'
 
-import image1 from '/Images/Buildingds/NargesBuildings.webp'
-import image2 from '/Images/Buildingds/Damaam.webp'
-import image3 from '/Images/Buildingds/Safa.webp'
-import image4 from '/Images/Buildingds/TheViewProject.webp'
+import image1 from '/Images/Buildingds/realestate.webp'
 
 const CardComponent = () => {
   const [ref, inView] = useInView({
@@ -32,19 +29,19 @@ const CardComponent = () => {
           partID = "projectPartId1" 
         />
         <CardItem 
-          imgSrc={image2} 
+          imgSrc={image1} 
           title="Gulf Square" 
           description="عمارة تجارية في حي الغدير بالدمام، تتكون من طوابق مخصصة للمعارض التجارية والمكاتب والشركات، بموقع استراتيجي على طريق الخليج الساحلي بمساحة 3600م. تهدف لتوفير بيئة عمل مثالية للشركات والعملاء." 
           partID = "projectPartId2" 
         />
         <CardItem 
-          imgSrc={image3} 
+          imgSrc={image1} 
           title="Safa Villas" 
           description="مشروع فلل سكنية في حي الصفا بالاحساء. يضم 6 فلل بتصاميم داخلية مذهلة ومساحات شاسعة. بمساحة 529م لكل فيلا. يوفر حلول سكنية اقتصادية مع خيارات متعددة للعائلات." 
           partID = "projectPartId3" 
         />
         <CardItem 
-          imgSrc={image4} 
+          imgSrc={image1} 
           title="The View" 
           description="ديارة العقارية تُقدم فرصة استثمارية في مدينة الإحساء: فندق سياحي 4 نجوم، 120 غرفة، 10 معارض، مواقف لـ 200 سيارة، مساحات تجارية، ملاعب، مسطحات خضراء، وجهة تسوق." 
           partID = "projectPartId4" 

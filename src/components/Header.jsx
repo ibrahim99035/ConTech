@@ -3,7 +3,8 @@ import './Styles/Header.css';
 import './Styles/VideoSection.css';
 
 import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
-import BackVideo from '/Videos/BackVideo.mp4'
+
+import Maintainance from '/Images/Buildingds/maintainance.webp'
 
 const Header = () => {
   const [navListActive, setNavListActive] = useState(false);
@@ -23,11 +24,8 @@ const Header = () => {
           <img src={DiyarahLogo} alt="Company Logo" className="vidLogo" loading="lazy" />
         </div>
       </nav>
-      <div className="video-section">
-        <video autoPlay loop playsInline>
-          <source src={ BackVideo } type="video/mp4" />
-          متصفحك لا يدعم تنسيق الفيديو المضاف الى الخلفية
-        </video>
+      <div className="image-section"> {/* Changed class name */}
+        <img src={Maintainance} alt="Maintenance" className="background-image" />
 
         <div className="content">
           <div>

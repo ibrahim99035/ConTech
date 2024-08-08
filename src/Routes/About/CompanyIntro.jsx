@@ -13,8 +13,8 @@ import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
 
 import Building1  from '/Images/Buildingds/Building1.webp'
 import Building2  from '/Images/Buildingds/values.png'
-import Building3  from '/Images/Buildingds/Building3.webp'
-
+import Electricity from '/Images/Buildingds/electric.webp'
+import RealEstate from '/Images/Buildingds/realestate.webp'
 const CompanyIntro = () => {
   const professionalIntroRef = useRef(null);
 
@@ -127,10 +127,17 @@ const CompanyIntro = () => {
         </ol>
         </div>
         <img
-          src={Building3}
+          src={Electricity}
           alt="Professional Image 3"
           className="animated-image"
-          id='Building3'
+          id='Electricity'
+          loading="lazy"
+        />
+        <img
+          src={RealEstate}
+          alt="Professional Image 3"
+          className="animated-image"
+          id='RealEstate'
           loading="lazy"
         />
       </div>

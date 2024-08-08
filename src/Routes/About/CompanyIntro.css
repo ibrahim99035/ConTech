@@ -54,6 +54,7 @@
     transform: translateX(-20px);
     animation: fadeInRight 1s forwards;
     margin-left: 2rem;
+    margin-top: 15px;
 }
 
 .alogo{
@@ -87,6 +88,20 @@
     animation: fadeIn 1s ease-in-out;
 }
 
+#Electricity {
+    z-index: 3;
+}
+
+#RealEstate {
+    z-index: 2;
+    top: 20px; /* Adjust this value to control the overlap */
+}
+
+#Plumbing {
+    z-index: 1;
+    top: 40px; /* Adjust this value to control the overlap */
+}
+
 @media (max-width: 767px) {
     .professional-intro-section{
         flex-direction: column;
@@ -98,6 +113,6 @@
         flex-direction: row;
     }
     .alogo{
-        max-width: 15rem;
+        max-width: 5rem;
     }
 }

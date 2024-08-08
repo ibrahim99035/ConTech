@@ -1,11 +1,11 @@
-.video-section {
+.image-section { /* Changed class name */
     position: relative;
     height: 100vh; 
     overflow: hidden;
     z-index: 1000;
 }
 
-video {
+.background-image { /* New class for the image */
     position: absolute;
     top: 0;
     left: 0;
@@ -17,26 +17,31 @@ video {
 
 .content {
     position: relative;
-    z-index: 1; /* Ensure content is on top of the video */
+    text-align: center;
+    z-index: 1; /* Ensure content is on top of the image */
     padding: 20px;
     color: var(--sec-color); /* Secondary color for text */
     text-align: left;
     width: 100%;
     margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
     z-index: 1000;
 }
 
 .content h1 {
     font-size: 4rem;
     margin: 0;
-    text-align: right;
+    text-align: center;
     z-index: 1000;
 }
 
 .content p {
     font-size: 2.5rem;
     margin: 0;
-    text-align: right;
+    text-align: center;
     z-index: 1000;
 }
 
@@ -58,23 +63,13 @@ video {
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-    .vlogoDiv{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .vidLogo{
-        width: auto;
-    }
-
-    video {
+    .background-image { /* Adjusting the image on mobile */
         height: auto;
     }
 
     .content{
-        margin-top: 1.5rem;
+        margin-top: 0.5px;
+        max-height: 15rem;
     }
 
     .content h1 {
@@ -89,7 +84,7 @@ video {
         text-align: center;
     }
 
-    .video-section {
-        height: 20vh;
+    .image-section { /* Adjust height on mobile */
+        height: 50vh;
     }
 }

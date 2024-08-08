@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Styles/InfoComponent.css';
 
-import image1 from '/Images/Buildingds/NargesBuildings.webp';
-import image2 from '/Images/Buildingds/Damaam.webp';
-import image3 from '/Images/Buildingds/Safa.webp';
-import image4 from '/Images/Buildingds/TheViewProject.webp';
+import image1 from '/Images/Buildingds/realestate.webp';
+import image2 from '/Images/Buildingds/electric.webp';
+import image3 from '/Images/Buildingds/plumbing.webp';
+import image4 from '/Images/Buildingds/conditioning.webp';
+import image5 from '/Images/Buildingds/maintainance.webp';
+import image6 from '/Images/Buildingds/contracting.webp';
 
 const InfoComponent = () => {
   return (
@@ -130,7 +132,7 @@ const InfoComponent = () => {
               </p>
             </div>
             <div className="infoImage">
-              <img src={image3} alt="الصيانة و التشغيل و ادارة الأملاك" loading="lazy" />
+              <img src={image5} alt="الصيانة و التشغيل و ادارة الأملاك" loading="lazy" />
             </div>
           </div>
         </div>
@@ -145,7 +147,7 @@ const InfoComponent = () => {
               </p>
             </div>
             <div className="infoImage">
-              <img src={image4} alt="التسويق العقاري" loading="lazy" />
+              <img src={image6} alt="التسويق العقاري" loading="lazy" />
             </div>
           </div>
         </div>
