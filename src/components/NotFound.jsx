@@ -4,7 +4,6 @@ import './Styles/NotFound.css'
 import { ImNotification } from "react-icons/im";
 
 import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
-import NotFoundIcon from '/Images/Icons/error-404.png'
 
 const NotFound = () => {
   return (

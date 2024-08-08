@@ -2,11 +2,6 @@ import React from 'react';
 import './Styles/Footer.css'; 
 import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
 
-import WhatsappLogo from '/Images/Social/whatsapp.png'
-import InstagramLogo from '/Images/Social/instagram.png'
-import LinkedinLogo from '/Images/Social/linkedin.png'
-import Twitter_Logo from '/Images/Social/twitter.png'
-
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";

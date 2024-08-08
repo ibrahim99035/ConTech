@@ -13,7 +13,7 @@ const Header = () => {
       <nav className={`navbar ${navListActive ? 'active' : ''}`}>
         <ul className="nav-list">
           <li className="nav-item"><a href="/" className="nav-link">الصفحة الرئيسية</a></li>
-          <li className="nav-item"><a href="/projects" className="nav-link">الأقسام</a></li>
+          <li className="nav-item"><a href="/sections" className="nav-link">الأقسام</a></li>
           <li className="nav-item"><a href="/about-us" className="nav-link">من نحن</a></li>
           {/* <li className="nav-item"><a href="/location" className="nav-link">موقعنا</a></li> */}
           <li className="nav-item" id='contactsNav'><a href="/chatting" className="nav-link">تواصل معنا</a></li>
