@@ -16,16 +16,6 @@ const Footer = () => {
           </a>
           <br />
         </div>
-            {/* <div className="footer-content" id='contactUSFooter'>
-                <h3>تواصل معنا</h3>
-                <a href="https://api.whatsapp.com/send?phone=966572696382" target="_blank">
-                  <img src={WhatsappLogo} alt="Whatsapp Icon" loading="lazy" />
-                </a>
-                <br /> <br />
-                <a href="https://api.whatsapp.com/send?phone=966572696382" target="_blank">
-                  <p>+966572696382</p>
-                </a>
-            </div> */}
             <div className="footer-content">
                 <h3>روابط هامة</h3>
                 <p><a href="/terms-and-conditions" target='_blank'>الشروط و الأحكام </a></p> <br />
@@ -36,22 +26,22 @@ const Footer = () => {
             <div className="footer-content" id='followUs'>
                 <h3>تواصل معنا</h3>
                 <div id='iconsContainer'>
-                  <a href="https://www.linkedin.com/company/diyarah-real-estate-company/" target='_blank'>
+                  <a href="" target='_blank'>
                     <FaFacebookSquare />
                   </a>
-                  <a href="https://www.instagram.com/diyarah.sa/?igsh=MWMyNGtmZzN1bmozYQ%3D%3D&utm_source=qr" target='_blank'>
+                  <a href="" target='_blank'>
                     <FaInstagramSquare />
                   </a>
-                  <a href="https://twitter.com/diyarahsa?s=21&t=YLugARlaRWNlnNqNJIA10w" target='_blank'>
+                  <a href="" target='_blank'>
                     <FaLinkedin />
                   </a>
-                  <a href="https://api.whatsapp.com/send?phone=966572696382" target="_blank">
+                  <a href="" target="_blank">
                     <FaWhatsappSquare />
                   </a>
-                  <a href="https://api.whatsapp.com/send?phone=966572696382" target="_blank">
+                  <a href="" target="_blank">
                     <FaSquareXTwitter />
                   </a>
-                  <a href="https://api.whatsapp.com/send?phone=966572696382" target="_blank">
+                  <a href="" target="_blank">
                     <SiGmail />
                   </a>
                 </div>
@@ -60,7 +50,16 @@ const Footer = () => {
         <br /> <br /> <br /> <br /> <br /> <br />
         <p className="copyright">© 2024 . كل الحقوق محفوظة لشركة القمة اللامعة.</p>
         <br />
-        <p id='hema'>Made by <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>Ibrahim Abu Eita</a> & <a href="http://www.linkedin.com/in/salma-khaled-539847260" target="_blank"> Ahmed Khamees</a></p>
+        <p id='hema'>
+          Made by 
+          <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>
+            Ibrahim Abu Eita
+          </a> 
+          & 
+          <a href="https://www.linkedin.com/in/ahmed-khamees-757980252" target="_blank"> 
+            Ahmed Khamees
+          </a>
+        </p>
     </footer>
   );
 }
