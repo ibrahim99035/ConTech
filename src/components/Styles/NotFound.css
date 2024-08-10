@@ -19,7 +19,7 @@
 
 #NotFoundContainer a, #NotFoundContainer p{
     color: var(--sec-color);
-    font-family: 'El Messiri', sans-serif;
+    font-family: "Cairo", sans-serif;
 }
 
 #NotFoundContainer a:hover{
