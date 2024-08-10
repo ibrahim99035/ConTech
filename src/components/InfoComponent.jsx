@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Styles/InfoComponent.css';
 
-import image1 from '/Images/Buildingds/realestate.webp';
-import image2 from '/Images/Buildingds/electric.webp';
-import image3 from '/Images/Buildingds/plumbing.webp';
-import image4 from '/Images/Buildingds/conditioning.webp';
-import image5 from '/Images/Buildingds/maintainance.webp';
-import image6 from '/Images/Buildingds/contracting.webp';
+import image1 from '/Images/Icons/contracting.png';
+import image2 from '/Images/Icons/electricity.png';
+import image3 from '/Images/Icons/plumbing.png';
+import image4 from '/Images/Icons/conditioning.png';
+import image5 from '/Images/Icons/maintainance.png';
+import image6 from '/Images/Icons/realestate.png';
 
 const InfoComponent = () => {
   return (
