@@ -5,12 +5,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './Styles/SliderSection.css';
 
-import Building1 from '/Images/Buildingds/maintainance.webp'
-import Building2 from '/Images/Buildingds/realestate.webp'
-import Building3 from '/Images/Buildingds/conditioning.webp'
-import Building4 from '/Images/Buildingds/electric.webp'
-import Building5 from '/Images/Buildingds/plumbing.webp'
-import Building6 from '/Images/Buildingds/contracting.webp'
+import Building1 from '/Images/Buildingds/1.png'
+import Building2 from '/Images/Buildingds/2.png'
+import Building3 from '/Images/Buildingds/3.png'
+import Building4 from '/Images/Buildingds/4.png'
+import Building5 from '/Images/Buildingds/5.png'
+import Building6 from '/Images/Buildingds/6.png'
 
 
 const SliderSection = () => {

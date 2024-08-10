@@ -4,7 +4,7 @@ import './Styles/VideoSection.css';
 
 import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
 
-import Maintainance from '/Images/Buildingds/maintainance.webp'
+import Maintainance from '/Images/Buildingds/mainBackground.jpg'
 
 const Header = () => {
   const [navListActive, setNavListActive] = useState(false);
@@ -29,8 +29,8 @@ const Header = () => {
 
         <div className="content">
           <div>
-          <h1>شركة القمة اللامعة</h1>
-          <p>نبني المستقبل.</p>
+          {/* <h1>شركة القمة اللامعة</h1>
+          <p>نبني المستقبل.</p> */}
           </div>
         </div>
       </div>

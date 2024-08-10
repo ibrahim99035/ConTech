@@ -11,10 +11,10 @@ import './CompanyIntro.css'; // Import your CSS file
 
 import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
 
-import Building1  from '/Images/Buildingds/Building1.webp'
+import Building1  from '/Images/Buildingds/mainBackground.jpg'
 import Building2  from '/Images/Buildingds/values.png'
-import Electricity from '/Images/Buildingds/electric.webp'
-import RealEstate from '/Images/Buildingds/realestate.webp'
+import Electricity from '/Images/Buildingds/1.png'
+import RealEstate from '/Images/Buildingds/2.png'
 const CompanyIntro = () => {
   const professionalIntroRef = useRef(null);
 
