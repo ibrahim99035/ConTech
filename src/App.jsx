@@ -1,6 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 import Header from './components/Header';
 import SliderSection from './components/SliderSection';
 import AboutUsSection from './components/HeroSection';
@@ -18,96 +20,122 @@ import NotFound from './components/NotFound'
 
 const App = () => {
   return (
-    <div>  
-      <BrowserRouter>
-        <Routes>
-          <Route 
-            path='/' 
-            element= {
+    <HelmetProvider>
+      <div>  
+        <BrowserRouter>
+          <Routes>
+            <Route 
+              path='/' 
+              element= {
+                <>
+                  <Helmet>
+                    <title>القمة اللامعة - الرئيسية</title>
+                  </Helmet>
+                  <Header /> 
+                  <SliderSection />
+                  <AboutUsSection />
+                  <CardComponent />
+                  <Footer />
+                  <GoToTopButton />
+                </>
+            } />
+
+            <Route path='/sections' element= {
               <>
-                <Header /> 
-                <SliderSection />
-                <AboutUsSection />
-                <CardComponent />
+                <Helmet>
+                  <title>القمة اللامعة - الأقسام</title>
+                </Helmet>
+                <Header />
+                <InfoComponent /> 
                 <Footer />
                 <GoToTopButton />
               </>
-          } />
+            } />
 
-          <Route path='/sections' element= {
-            <>
-              <Header />
-              <InfoComponent /> 
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
+            <Route path='/news' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - الأخبار</title>
+                </Helmet>
+                <Header />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
+            
+            <Route path='/about-us' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - من نحن؟</title>
+                </Helmet>
+                <Header />
+                <About />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
 
-          <Route path='/news' element= {
-            <>
-              <Header />
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
-          
-          <Route path='/about-us' element= {
-            <>
-              <Header />
-              <About />
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
+            <Route path='/terms-and-conditions' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - الشروك و الأحكام</title>
+                </Helmet>
+                <Header />
+                <TermsAndConditions />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
 
-          <Route path='/terms-and-conditions' element= {
-            <>
-              <Header />
-              <TermsAndConditions />
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
+            <Route path='/intellectual-property' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - حقوق الملكية الفكرية</title>
+                </Helmet>
+                <Header />
+                <IntellectualPropertyRights />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
 
-          <Route path='/intellectual-property' element= {
-            <>
-              <Header />
-              <IntellectualPropertyRights />
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
+            <Route path='/privacy-policy' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - سياسة الخصوصية</title>
+                </Helmet>
+                <Header />
+                <PrivacyPolicy />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
 
-          <Route path='/privacy-policy' element= {
-            <>
-              <Header />
-              <PrivacyPolicy />
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
+            <Route path='/location' element= {
+              <>
+                <Header />
+                <GoogleMapSection /> 
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
 
-          <Route path='/location' element= {
-            <>
-              <Header />
-              <GoogleMapSection /> 
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
-
-          <Route path='/chatting' element= {
-            <>
-              <Header />
-              <ChatWithUsSection /> 
-              <Footer />
-              <GoToTopButton />
-            </>
-          } />
-          <Route path='*' element = {<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+            <Route path='/contact-us' element= {
+              <>
+                <Helmet>
+                  <title>القمة اللامعة - تواصل معنا</title>
+                </Helmet>
+                <Header />
+                <ChatWithUsSection /> 
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
+            <Route path='*' element = {<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </HelmetProvider>
   );
 }
 
