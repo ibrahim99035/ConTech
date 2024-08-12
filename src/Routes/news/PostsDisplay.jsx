@@ -9,12 +9,12 @@ const PostsDisplay = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:3000/posts');
+        const response = await fetch('https://companysa.onrender.com/posts');
         if (!response.ok) {
           throw new Error('Failed to fetch posts');
         }
         const data = await response.json();
-        setPosts(data);
+        setPosts(data.reverse());
       } catch (error) {
         setError(error.message);
       } finally {

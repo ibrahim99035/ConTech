@@ -13,6 +13,7 @@ const Admin = () => {
   const [content, setContent] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (token) {
@@ -22,11 +23,11 @@ const Admin = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3000/posts', {
+      const response = await fetch('https://companysa.onrender.com/posts', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await response.json();
-      setPosts(data);
+      setPosts(data.reverse());
     } catch (error) {
       console.error('Error fetching posts:', error);
     }
@@ -35,7 +36,7 @@ const Admin = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/login', {
+      const response = await fetch('https://companysa.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +61,7 @@ const Admin = () => {
   const handlePostSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/posts', {
+      const response = await fetch('https://companysa.onrender.com/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -83,7 +84,7 @@ const Admin = () => {
 
   const handleUpdatePost = async (id, newTitle, newContent) => {
     try {
-      const response = await fetch(`http://localhost:3000/posts/${id}`, {
+      const response = await fetch(`https://companysa.onrender.com/posts/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +105,7 @@ const Admin = () => {
 
   const handleDeletePost = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/posts/${id}`, {
+      const response = await fetch(`https://companysa.onrender.com/posts/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -119,6 +120,11 @@ const Admin = () => {
     } catch (error) {
       console.error('Error deleting post:', error);
     }
+  };
+
+  const handleLogout = () => {
+    setToken('');
+    localStorage.removeItem('token');
   };
 
   if (!token) {
@@ -144,7 +150,9 @@ const Admin = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button type="submit">سجل الدخول</button>
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? 'جارٍ التسجيل...' : 'سجل'}
+            </button>
           </form>
         </div>
         <div id='QuemaLogo'>
@@ -159,6 +167,7 @@ const Admin = () => {
       <div id='QuemaLogo'>
         <img src={Quema} alt="Quema Logo" />
       </div>
+      <button onClick={handleLogout}>Logout</button>
       <div id='postCreationForm'>
         <h2>أنشئ منشور جديد</h2>
         <form onSubmit={handlePostSubmit}>
@@ -175,7 +184,9 @@ const Admin = () => {
             onChange={(e) => setContent(e.target.value)}
             required
           />
-          <button type="submit">نشر</button>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? 'جارٍ النشر...' : 'نشر'}
+          </button>
         </form>
 
         <h2>المنشورات المحفوظة</h2>
