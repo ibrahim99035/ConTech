@@ -40,7 +40,31 @@
     transition: color 0.3s ease;
     z-index: 1000;
 }
+
+#whatsappIcon:hover{
+    color: #128C7E;
+}
   
+#instgramIcon:hover{
+    color: #e6683c;
+}
+
+#twitterIcon:hover{
+    color: black;
+}
+
+#linkedIcon:hover{
+    color: #0A66C2;
+}
+
+#facebookIcon:hover{
+    color: #1877F2;
+}
+
+#gmailIcon:hover{
+    color: #EA4335;
+}
+
 .social-icons a:hover {
     color: var(--main-color);
     z-index: 1000;

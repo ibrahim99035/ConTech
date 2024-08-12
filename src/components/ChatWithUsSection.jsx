@@ -13,28 +13,27 @@ const ChatWithUsSection = () => {
         <h2>تواصل معنا</h2>
         <p>نحب أن نسمع منك, تواصل معنا عبر حساباتنا على وسائل التواصل الاجتماعي, أو أرسل لنا رسالة.</p>
 
-        <div className="social-icons">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookSquare />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaSquareXTwitter />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagramSquare />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <FaWhatsappSquare />
-          </a>
-          <a href="mailto:contact@example.com" target="_blank" rel="noopener noreferrer">
-            <SiGmail />
-          </a>
-        </div>
-
         <form className="contact-form">
+          <div className="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" id='facebookIcon'>
+              <FaFacebookSquare />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" id='twitterIcon'>
+              <FaSquareXTwitter />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" id='instgramIcon'>
+              <FaInstagramSquare />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" id='linkedIcon'>
+              <FaLinkedin />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" id='whatsappIcon'>
+              <FaWhatsappSquare />
+            </a>
+            <a href="mailto:contact@example.com" target="_blank" rel="noopener noreferrer" id='gmailIcon'>
+              <SiGmail />
+            </a>
+          </div>
           <input type="text" placeholder="اسمكك" required />
           <input type="email" placeholder="بيردك الالكتروني" required />
           <textarea placeholder="رسالتك" required></textarea>

@@ -26,22 +26,22 @@ const Footer = () => {
             <div className="footer-content" id='followUs'>
                 <h3>تواصل معنا</h3>
                 <div id='iconsContainer'>
-                  <a href="" target='_blank'>
+                  <a href="" target='_blank' id='facebookIcon'>
                     <FaFacebookSquare />
                   </a>
-                  <a href="" target='_blank'>
+                  <a href="" target='_blank' id='instgramIcon'>
                     <FaInstagramSquare />
                   </a>
-                  <a href="" target='_blank'>
+                  <a href="" target='_blank' id='linkedIcon'>
                     <FaLinkedin />
                   </a>
-                  <a href="" target="_blank">
+                  <a href="" target="_blank" id='whatsappIcon'>
                     <FaWhatsappSquare />
                   </a>
-                  <a href="" target="_blank">
+                  <a href="" target="_blank" id='twitterIcon'>
                     <FaSquareXTwitter />
                   </a>
-                  <a href="" target="_blank">
+                  <a href="" target="_blank" id='gmailIcon'>
                     <SiGmail />
                   </a>
                 </div>
@@ -51,14 +51,7 @@ const Footer = () => {
         <p className="copyright">© 2024 . كل الحقوق محفوظة لشركة القمة اللامعة.</p>
         <br />
         <p id='hema'>
-          Made by 
-          <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>
-            Ibrahim Abu Eita
-          </a> 
-          & 
-          <a href="https://www.linkedin.com/in/ahmed-khamees-757980252" target="_blank"> 
-            Ahmed Khamees
-          </a>
+          Made by <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>Ibrahim Abu Eita</a> & <a href="https://www.linkedin.com/in/ahmed-khamees-757980252" target="_blank"> Ahmed Khamees</a>
         </p>
     </footer>
   );
