@@ -15,8 +15,10 @@ import InfoComponent from './components/InfoComponent';
 import PrivacyPolicy from './Routes/Privacy_policy/PrivacyPolicy';
 import TermsAndConditions from './Routes/Terms_and_Conditions/TermsAndConditions';
 import IntellectualPropertyRights from './Routes/IntellectualPropertyRights/IntellectualPropertyRights';
-import About from './Routes/About/CompanyIntro'
-import NotFound from './components/NotFound'
+import About from './Routes/About/CompanyIntro';
+import NotFound from './components/NotFound';
+import Admin from './config/admin';
+import News from './Routes/news/PostsDisplay'
 
 const App = () => {
   return (
@@ -58,6 +60,7 @@ const App = () => {
                   <title>القمة اللامعة - الأخبار</title>
                 </Helmet>
                 <Header />
+                <News />
                 <Footer />
                 <GoToTopButton />
               </>
@@ -111,11 +114,9 @@ const App = () => {
               </>
             } />
 
-            <Route path='/location' element= {
+            <Route path='/shiny-admin-panel' element= {
               <>
-                <Header />
-                <GoogleMapSection /> 
-                <Footer />
+                <Admin /> 
                 <GoToTopButton />
               </>
             } />

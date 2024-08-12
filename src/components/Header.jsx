@@ -17,8 +17,8 @@ const Header = () => {
           <li className="nav-item"><a href="/sections" className="nav-link">الأقسام</a></li>
           <li className="nav-item"><a href="/about-us" className="nav-link">من نحن</a></li>
           {/* <li className="nav-item"><a href="/location" className="nav-link">موقعنا</a></li> */}
+          <li className="nav-item"><a href="/news" className="nav-link">الأخبار</a></li>
           <li className="nav-item" id='contactsNav'><a href="/contact-us" className="nav-link">تواصل معنا</a></li>
-          {/* <li className="nav-item"><a href="/news" className="nav-link">الأخبار</a></li> */}
         </ul>
         <div id='vlogoDiv'>
           <img src={DiyarahLogo} alt="Company Logo" className="vidLogo" loading="lazy" />

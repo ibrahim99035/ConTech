@@ -1,0 +1,131 @@
+/* General Styles */
+#loginForm, #postCreationForm {
+    background-color: var(--blacker-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    max-width: 90%;
+    z-index: 10;
+    position: relative;
+}
+
+h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid var(--sec-color);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: var(--sec-color);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+button:hover {
+    background-color: darken(var(--main-color), 10%);
+}
+
+#postsFetchedAdmin {
+    position: relative;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--sec-color);
+    border-radius: 8px;
+    background: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#postsFetchedAdmin h3 {
+    color: var(--main-color);
+}
+
+#postsFetchedAdmin p {
+    color: var(--sec-color);
+}
+
+#postsFetchedAdmin button {
+    background-color: #ff5722;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#postsFetchedAdmin button:hover {
+    background-color: #e64a19;
+}
+
+/* Styling for Delete Icon */
+#deleteIcon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    color: var(--sec-color);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#deleteIcon:hover {
+    color: #ff5722;
+}
+
+/* Logo Styles */
+#QuemaLogo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#QuemaLogo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px; /* Adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #loginForm, #postCreationForm {
+        padding: 15px;
+        max-width: 95%;
+    }
+    
+    input, textarea, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #postsFetchedAdmin {
+        padding: 12px;
+    }
+
+    #deleteIcon {
+        font-size: 18px;
+    }
+}
