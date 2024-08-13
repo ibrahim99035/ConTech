@@ -34,16 +34,19 @@ const PostsDisplay = () => {
   }
 
   return (
-    <div className="posts-container">
-      {posts.map((post, index) => (
-        <div
-          key={post.id}
-          className={`post-card ${index === 0 ? 'first-card' : ''}`} // Add first-card class to the first post
-        >
-          <h3 className="post-title">{post.title}</h3>
-          <p className="post-content">{post.content}</p>
-        </div>
-      ))}
+    <div>
+      <div className='overlay-image'></div>
+      <div className="posts-container">
+        {posts.map((post, index) => (
+          <div
+            key={post.id}
+            className={`post-card ${index === 0 ? 'first-card' : ''}`} // Add first-card class to the first post
+          >
+            <h3 className="post-title">{post.title}</h3>
+            <p className="post-content">{post.content}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
