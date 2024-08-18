@@ -35,7 +35,7 @@ const GoToTopButton = () => {
       className={`goToTopBtn ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
-      الى أعلى
+      Up
     </button>
   );
 };

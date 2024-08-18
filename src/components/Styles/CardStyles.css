@@ -8,7 +8,7 @@
   }
   
   .card {
-    background: linear-gradient(145deg, #8dc6c7, #d0d6d6);
+    background: linear-gradient(145deg, #1f306f73, #fdb71462); 
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -18,6 +18,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     z-index: 1000;
     cursor: pointer;
+    color: white;
   }
   
   .card::before {
@@ -46,14 +47,14 @@
   .card-title {
     font-size: 1.8em;
     margin-bottom: 0.5em;
-    color: #333;
+    color: white;
     position: relative;
     z-index: 1;
   }
   
   .card-content {
     font-size: 1.2em;
-    color: #666;
+    color: white;
     position: relative;
     z-index: 1;
   }

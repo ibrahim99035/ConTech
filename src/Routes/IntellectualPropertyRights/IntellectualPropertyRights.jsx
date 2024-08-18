@@ -1,68 +1,73 @@
 import React from 'react';
 import './IntellectualPropertyRights.css';
-import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
+import DiyarahLogo from '/Images/Icons/CT png.png'
 
 const IntellectualPropertyRights = () => {
   return (
-    <div className="intellectual-property-rights-container">
+    <div>
       <div className='overlay-image'></div>
-      <header>
-        <h1 className="intellectual-property-rights-title">حقوق الملكية الفكرية</h1>
-      </header>
+      <div className="intellectual-property-rights-container">
+        <header>
+          <h1 className="intellectual-property-rights-title">ConTech Intellectual Property Rights</h1>
+        </header>
 
-      <section>
-        <p className="intellectual-property-rights-text">
-          نحن في شركة القمة اللامعة نضع حقوق الملكية الفكرية في أولويتنا. جميع الحقوق الملكية الفكرية للمحتوى الذي نقدمه، سواء كانت صورًا، نصوصًا، أو أي مواد أخرى، تعود بالكامل إلى شركتنا.
-        </p>
-        <p className="intellectual-property-rights-text">
-          يُمنع استخدام أو نقل أو تعديل أو نسخ أو نشر أو توزيع أي جزء من محتوانا دون الحصول على إذن كتابي منا. نحن نحتفظ بحقوقنا الكاملة ونتخذ جميع الإجراءات القانونية لحماية حقوقنا في حال حدوث انتهاك.
-        </p>
-      </section>
+        <section>
+          <h2>Ownership of Content:</h2>
+          <p className="intellectual-property-rights-text">
+            All content, materials, and intellectual property available on or through Contech Company, including but not limited to text, graphics, logos, images, software, designs, icons, audio clips, video clips, data compilations, page layouts, user interfaces, and the overall look and feel (collectively referred to as “Content”), are the exclusive property of Contech Company or our licensors. These are protected by applicable copyright, trademark, patent, trade secret, and other intellectual property laws.
+          </p>
+        </section>
 
-      <section>
-        <h2>تراخيص الاستخدام</h2>
-        <p>
-          يُمنح للمستخدمين ترخيص غير حصري وغير قابل للانتقال لاستخدام خدماتنا ومحتوانا بموجب هذه الشروط والأحكام. ومع ذلك، يجب على المستخدمين الامتناع عن استخدام المحتوى بطرق تتعارض مع حقوق الملكية الفكرية المذكورة.
-        </p>
-      </section>
+        <section>
+          <h2>Trademarks and Logos:</h2>
+          <p>
+            The trademarks, service marks, logos, and trade names displayed on our website or in our products (collectively, the “Trademarks”) are the registered and unregistered marks of Contech Company or our affiliates and partners. You are not permitted to use any of these Trademarks without our prior written consent.
+          </p>
+        </section>
 
-      <section>
-        <h2>التعويض</h2>
-        <p>
-          يوافق المستخدمون على تعويض شركة القمة اللامعة وحمايتها من أي مطالبات أو خسائر تنشأ عن استخدامهم لخدماتنا أو انتهاكهم لحقوق الملكية الفكرية.
-        </p>
-      </section>
+        <section>
+          <h2>License to Use Content:</h2>
+          <p>
+            We grant you a limited, non-exclusive, non-transferable, and revocable license to access and use our Content solely for personal or commercial use in connection with our services. This license does not grant you any rights to:
+            <ul>
+              <li>- Copy, reproduce, distribute, republish, download, display, post, or transmit the Content in any form or by any means without prior written permission.</li>
+              <li>- Modify, alter, create derivative works from, or reverse engineer any part of the Content.</li>
+              <li>- Exploit any of the Content for commercial gain or public display.</li>
+            </ul>
+          </p>
+        </section>
 
-      <section>
-        <h2>الاستخدام الشرعي</h2>
-        <p>
-          نحن نشجع على استخدام محتوانا بطرق تتوافق مع القوانين والأنظمة. يجب أن يكون الاستخدام الشرعي لمحتوانا في إطار القوانين الوطنية والدولية ذات الصلة.
-        </p>
-      </section>
+        <section>
+          <h2>User-Generated Content:</h2>
+          <p>
+            If you submit any content, ideas, suggestions, or materials (collectively “Submissions”) to us, you grant Contech Company a worldwide, perpetual, irrevocable, royalty-free, and fully transferable license to use, reproduce, modify, distribute, and display such Submissions for any purpose. You represent and warrant that you own or have the necessary rights to grant us such license, and that your Submissions do not infringe the intellectual property rights of any third party.
+          </p>
+        </section>
 
-      <section>
-        <h2>الاستشارة القانونية</h2>
-        <p>
-          يُفضل دائمًا استشارة مستشار قانوني قبل استخدام أو تعديل أو نشر أي جزء من محتوانا، خاصة إذا كان الاستخدام ينطوي على استخدام تجاري أو تعديل للمحتوى.
-        </p>
-      </section>
+        <section>
+          <h2>Copyright Infringement and DMCA Policy:</h2>
+          <p>
+            We respect the intellectual property rights of others and expect our users to do the same. If you believe that your copyrighted material has been used on our site or services in a way that constitutes copyright infringement, please contact us with a detailed notice in accordance with the Digital Millennium Copyright Act (DMCA) or other applicable laws.
+          </p>
+        </section>
 
-      <section>
-        <h2>الابتكار والتعاون</h2>
-        <p>
-          نحن مفتوحون دائمًا للتفاوض والتعاون فيما يتعلق بحقوق الملكية الفكرية. إذا كنتم مهتمين بالاستفادة من محتوانا بطرق معينة، يرجى التواصل مع فريقنا لمناقشة الاتفاقيات والتفاصيل.
-        </p>
-      </section>
+        <section>
+          <h2>Termination of Rights:</h2>
+          <p>
+            We reserve the right to terminate or suspend any licenses granted to you under these Terms and Conditions if you violate any provisions related to intellectual property rights.
+          </p>
+        </section>
 
-      <section>
-        <h2>شكرًا لاستخدام خدماتنا</h2>
-        <p>
-         نقدر اختياركم لاستخدام خدماتنا، ونتطلع دائمًا إلى تقديم محتوى عالي الجودة مع احترام تام لحقوق الملكية الفكرية.
-        </p>
-      </section>
+        <section>
+          <h2>Reservation of Rights:</h2>
+          <p>
+            All rights not expressly granted under these Terms and Conditions are reserved by Contech Company. No content or materials from our website or services may be used in a manner not expressly authorized by these terms.
+          </p>
+        </section>
 
-      <div id='plogoDiv'>
-        <img src={DiyarahLogo} alt="Company Logo" className="plogo" loading="lazy" />
+        <div id='plogoDiv'>
+          <img src={DiyarahLogo} alt="Company Logo" className="plogo" loading="lazy" />
+        </div>
       </div>
     </div>
   );

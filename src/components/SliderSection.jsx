@@ -5,12 +5,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './Styles/SliderSection.css';
 
-import Building1 from '/Images/Buildingds/1.png'
-import Building2 from '/Images/Buildingds/2.png'
-import Building3 from '/Images/Buildingds/3.png'
-import Building4 from '/Images/Buildingds/4.png'
-import Building5 from '/Images/Buildingds/5.png'
-import Building6 from '/Images/Buildingds/6.png'
+import Building1 from '/Images/Buildingds/01 Logo Mockup - by PuneDesign.png'
+import Building2 from '/Images/Buildingds/3d glass window logo mockup.png'
+import Building3 from '/Images/Buildingds/REPLACE THIS SCREEN1111112.png'
+import Building4 from '/Images/Buildingds/REPLACE THIS.png'
 
 
 const SliderSection = () => {
@@ -19,7 +17,7 @@ const SliderSection = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 150,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -39,36 +37,28 @@ const SliderSection = () => {
         <div>
             <Slider ref={sliderRef} {...settings}>
                 <div className="slide">
-                    <img src={Building1} alt="Slide 1" className="slide-image" loading="lazy" />
+                  <img src={Building1} alt="Slide 1" className="slide-image" loading="lazy" />
                 </div>
 
                 <div className="slide">
-                    <img src={Building2} alt="Slide 2" className="slide-image" loading="lazy" />
+                  <img src={Building2} alt="Slide 2" className="slide-image" loading="lazy" />
                 </div>
 
                 <div className="slide">
-                    <img src={Building3} alt="Slide 3" className="slide-image" loading="lazy" />
+                  <img src={Building3} alt="Slide 3" className="slide-image" loading="lazy" />
                 </div>
 
                 <div className="slide">
-                    <img src={Building4} alt="Slide 4" className="slide-image" loading="lazy" />
-                </div>
-
-                <div className="slide">
-                    <img src={Building5} alt="Slide 5" className="slide-image" loading="lazy" />
-                </div>
-
-                <div className="slide">
-                    <img src={Building6} alt="Slide 6" className="slide-image" loading="lazy" />
+                  <img src={Building4} alt="Slide 4" className="slide-image" loading="lazy" />
                 </div>
                 
             </Slider>
         </div>
 
         <div className="navigation-buttons">
-            <button onClick={goToPrevSlide}> &lt; السابق</button>
+            <button onClick={goToPrevSlide}>&lt;</button>
             
-            <button onClick={goToNextSlide}>التالي &gt;</button>
+            <button onClick={goToNextSlide}>&gt;</button>
         </div>
     </div>
   );

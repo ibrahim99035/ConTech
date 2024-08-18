@@ -18,8 +18,11 @@ import IntellectualPropertyRights from './Routes/IntellectualPropertyRights/Inte
 import About from './Routes/About/CompanyIntro';
 import NotFound from './components/NotFound';
 import Admin from './config/admin';
-import News from './Routes/news/PostsDisplay'
-
+import News from './Routes/news/PostsDisplay';
+import BlogDashboard from './config/blogDhashboard';
+import BlogPost from './Routes/blog/Post';
+import BlogPostList from './Routes/blog/PostList';
+import AppShowCase from './components/AppShowcase';
 const App = () => {
   return (
     <HelmetProvider>
@@ -31,11 +34,12 @@ const App = () => {
               element= {
                 <>
                   <Helmet>
-                    <title>القمة اللامعة - الرئيسية</title>
+                    <title>ConTech - Home</title>
                   </Helmet>
                   <Header /> 
                   <SliderSection />
                   <AboutUsSection />
+                  <AppShowCase />
                   <CardComponent />
                   <Footer />
                   <GoToTopButton />
@@ -45,7 +49,7 @@ const App = () => {
             <Route path='/sections' element= {
               <>
                 <Helmet>
-                  <title>القمة اللامعة - الأقسام</title>
+                  <title>ConTech - Sections</title>
                 </Helmet>
                 <Header />
                 <InfoComponent /> 
@@ -54,13 +58,22 @@ const App = () => {
               </>
             } />
 
-            <Route path='/news' element= {
+            <Route path='/blog' element= {
               <>
                 <Helmet>
-                  <title>القمة اللامعة - الأخبار</title>
+                  <title>ConTech - News</title>
                 </Helmet>
                 <Header />
-                <News />
+                <BlogPostList />
+                <Footer />
+                <GoToTopButton />
+              </>
+            } />
+
+            <Route path="/post/:slug" element={
+              <>
+                <Header />
+                <BlogPost />
                 <Footer />
                 <GoToTopButton />
               </>
@@ -117,6 +130,15 @@ const App = () => {
             <Route path='/shiny-admin-panel' element= {
               <>
                 <Admin /> 
+                <GoToTopButton />
+              </>
+            } />
+
+            <Route path='/blog-admin-panel' element= {
+              <>
+                <Header />
+                <BlogDashboard /> 
+                <Footer />
                 <GoToTopButton />
               </>
             } />

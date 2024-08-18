@@ -1,0 +1,76 @@
+/* Container for the editor */
+.rich-text-editor-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+/* Quill editor styling */
+.ql-container {
+    border: none;
+    border-radius: 8px;
+    z-index: 1000;
+}
+  
+.ql-editor {
+    min-height: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8;
+    z-index: 1000;
+}
+  
+/* Toolbar styling */
+.ql-toolbar {
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 1100;
+}
+  
+.ql-toolbar button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    margin: 0 5px;
+    transition: color 0.3s;
+    z-index: 1100;
+}
+  
+.ql-toolbar button:hover {
+    color: #143d63; /* Your primary color */
+}
+  
+.ql-picker-label {
+    font-size: 14px;
+    z-index: 1100;
+}
+  
+.ql-picker {
+    margin: 0 5px;
+    z-index: 1100;
+}
+  
+.ql-picker-item {
+    font-size: 14px;
+    z-index: 1100;
+}
+  
+/* Font picker dropdown */
+.ql-picker.ql-font .ql-picker-label {
+    font-family: 'Roboto', sans-serif;
+    z-index: 1100;
+}
+  
+.ql-align .ql-picker {
+    z-index: 1100;
+}

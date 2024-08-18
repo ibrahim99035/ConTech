@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/Footer.css'; 
-import DiyarahLogo from '/Images/Icons/QuemaLogo.png'
+import DiyarahLogo from '/Images/Icons/CT png w-04.png'
 
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -17,14 +17,16 @@ const Footer = () => {
           <br />
         </div>
             <div className="footer-content">
-                <h3>روابط هامة</h3>
-                <p><a href="/terms-and-conditions" target='_blank'>الشروط و الأحكام </a></p> <br />
-                <p><a href="/intellectual-property" target="_blank">حقوق الملكية الفكرية </a></p> <br />
-                <p><a href="/privacy-policy" target="_blank">سياسات الخصوصية</a></p> <br />
+                <h3>Important Links</h3>
+                <p><a href="/terms-and-conditions" target='_blank'>Terms and Conditions </a></p> <br />
+                <p><a href="/intellectual-property" target="_blank">Intellectual Property </a></p> <br />
+                <p><a href="/privacy-policy" target="_blank">Privacy Policy</a></p> <br />
+                <p><a href="/contact-us" target="_blank">Contact Us</a></p> <br />
+                <p><a href="/contact-us" target="_blank">Documentation</a></p> <br />
             </div>
   
             <div className="footer-content" id='followUs'>
-                <h3>تواصل معنا</h3>
+                <h3>Social Contacts</h3>
                 <div id='iconsContainer'>
                   <a href="" target='_blank' id='facebookIcon'>
                     <FaFacebookSquare />
@@ -48,10 +50,10 @@ const Footer = () => {
             </div>
         </div>
         <br /> <br /> <br /> <br /> <br /> <br />
-        <p className="copyright">© 2024 . كل الحقوق محفوظة لشركة القمة اللامعة.</p>
+        <p className="copyright">All rights reserved for ConTech Company 2024 ©.</p>
         <br />
         <p id='hema'>
-          Made by <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>Ibrahim Abu Eita</a> & <a href="https://www.linkedin.com/in/ahmed-khamees-757980252" target="_blank"> Ahmed Khamees</a>
+          Made by <a href="https://www.linkedin.com/in/ibrahim-abu-eita-0b2490206/" target='_blank'>Ibrahim Abu Eita</a> & <a href="https://www.linkedin.com/in/mahmoud-saleh-5055801a5/" target="_blank"> Mahmoud Saleh</a>
         </p>
     </footer>
   );

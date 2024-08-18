@@ -5,9 +5,10 @@
     background-color: var(--bg-color); 
     box-shadow: 0 0 10px var(--sec-color); 
     border-radius: 10px;
-    text-align: right; 
+    text-align: left; 
     margin-top: 2rem;
     margin-bottom: 2rem;
+    position: relative;
     z-index: 1000;
 }
 
@@ -44,6 +45,7 @@
     color: var(--sec-color); /* Dark background color */
     font-size: 20px;
     margin-bottom: 10px;
+    text-align: left;
     z-index: 1000;
 }
 

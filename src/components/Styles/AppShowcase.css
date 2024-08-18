@@ -1,0 +1,96 @@
+.showcase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .phone-frame {
+    width: 300px;
+    height: 600px;
+    background-color: #000;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .phone-frame::before {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .phone-frame::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .app-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .app-preview h2 {
+    font-size: 24px;
+    color: #143d63;
+  }
+  
+  .app-preview p {
+    font-size: 16px;
+    color: #1f1e1e;
+    margin: 10px 0;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #143d63;
+    color: rgb(144, 126, 224);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    opacity: 0.9;
+  }
+
+
+#CTIconMobile img{
+    max-width: 230px;
+}
+
+#gogolePlayIcon img{
+    max-width: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
